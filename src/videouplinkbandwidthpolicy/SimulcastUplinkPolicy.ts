@@ -286,19 +286,19 @@ export default class SimulcastUplinkPolicy implements VideoUplinkBandwidthPolicy
     if (this.numParticipants <= 2 && this.lastUplinkBandwidthKbps >= 1100) {
       trackConstraint = {
         width: { ideal: 1280 },
-        height: { ideal: 720 },
+        height: { ideal: 768 },
         frameRate: { ideal: 15 },
       };
     } else if (this.numParticipants <= 4 && this.lastUplinkBandwidthKbps >= 600) {
       trackConstraint = {
         width: { ideal: 960 },
-        height: { ideal: 540 },
+        height: { ideal: 576 },
         frameRate: { ideal: 15 },
       };
     } else {
       trackConstraint = {
         width: { ideal: 1280 },
-        height: { ideal: 720 },
+        height: { ideal: 768 },
         frameRate: { ideal: 15 },
       };
     }
